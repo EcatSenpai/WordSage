@@ -5,14 +5,15 @@
     box-sizing: border-box;
 }
 
+/* Gradient background */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     padding: 20px;
     color: #333;
-    /* Gradient background */
-    background: linear-gradient(135deg, #FF776B, #FF776B);
-    background-attachment: fixed; /* Keep it fixed when scrolling */
+    background: linear-gradient(135deg, #FF776B, #FF776B); /* Same color gradient */
+    background-attachment: fixed;
+    height: 100vh; /* Ensure it covers the full height of the viewport */
 }
 
 /* Center header and make it stand out */
@@ -89,7 +90,9 @@ ul li::before {
 
 /* FAQ and Support Section */
 #support {
-    margin: 40px 0;
+    margin: 40px auto; /* Centers the section */
+    text-align: center; /* Centers text inside the section */
+    max-width: 800px; /* Makes sure it has a proper width */
 }
 
 #support h2, #support h3 {
