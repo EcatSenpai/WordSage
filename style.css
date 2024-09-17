@@ -69,7 +69,7 @@ ul li::before {
 }
 
 #screenshots h2 {
-    color: #4a90e2;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -79,20 +79,13 @@ ul li::before {
     gap: 20px;
 }
 
-/* Gallery Images (iPhone Size) */
 .gallery img {
-    width: 375px;      /* Force the width to match iPhone screen width */
-    height: 812px;     /* Force the height to match iPhone screen height */
-    object-fit: cover; /* This ensures the image fills the area while maintaining aspect ratio */
+    width: 375px;
+    height: 812px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
-
-.gallery img:hover {
-    transform: scale(1.05); /* Slight zoom on hover for a nice effect */
-}
-
 
 /* FAQ and Support Section */
 #support {
