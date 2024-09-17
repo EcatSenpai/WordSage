@@ -10,7 +10,9 @@ body {
     line-height: 1.6;
     padding: 20px;
     color: #333;
-    background-color: #f4f4f4;
+    /* Gradient background */
+    background: linear-gradient(135deg, #FF776B, #FF776B);
+    background-attachment: fixed; /* Keep it fixed when scrolling */
 }
 
 /* Center header and make it stand out */
@@ -21,19 +23,19 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    color: #4a90e2;
+    color: #fff; /* Make the text stand out against the gradient background */
 }
 
 header p {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: #555;
+    color: #f2f2f2;
 }
 
 /* Features section */
 #features h2 {
     text-align: center;
-    color: #4a90e2;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -91,19 +93,49 @@ ul li::before {
     transform: scale(1.05); /* Slight zoom on hover for a nice effect */
 }
 
-/* Support section */
+
+/* FAQ and Support Section */
 #support {
     margin: 40px 0;
 }
 
 #support h2, #support h3 {
-    color: #4a90e2;
+    color: #fff;
 }
 
+/* Make FAQ answers scale properly */
+#support ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px; /* Allow wider space for longer content */
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+#support li {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#support li strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#support p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
-    color: #777;
+    color: #fff;
 }
 
 /* Mobile styles */
@@ -121,5 +153,15 @@ footer {
         width: 80%;
         max-width: 250px;
         height: auto;
+    }
+
+    /* Make FAQ items easier to read on small screens */
+    #support ul {
+        max-width: 100%; /* Use full width on smaller screens */
+        padding: 0 20px;
+    }
+
+    #support li {
+        padding: 15px;
     }
 }
