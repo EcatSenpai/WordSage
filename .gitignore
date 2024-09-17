@@ -16,6 +16,10 @@ xcuserdata/
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+## website stuff
+
+*.html
+*.css
 
 # Swift Package Manager
 #
