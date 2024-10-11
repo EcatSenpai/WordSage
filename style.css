@@ -11,9 +11,8 @@ body {
     line-height: 1.6;
     padding: 20px;
     color: #333;
-    background: linear-gradient(135deg, #FF776B, #FF776B); /* Same color gradient */
+    background: linear-gradient(135deg, #FF776B, #FF9B6B); /* Slightly different gradient for better contrast */
     background-attachment: fixed;
-    height: 100vh; /* Ensure it covers the full height of the viewport */
 }
 
 /* Center header and make it stand out */
@@ -31,6 +30,34 @@ header p {
     font-size: 1.2rem;
     margin-top: 10px;
     color: #f2f2f2;
+}
+
+/* Navigation bar styles */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    gap: 20px; /* Space between links */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #FFEB3B; /* Change color on hover */
 }
 
 /* Features section */
@@ -78,6 +105,7 @@ ul li::before {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .gallery img {
@@ -134,10 +162,30 @@ footer {
     color: #fff;
 }
 
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem; /* Larger icons */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.social-media a:hover {
+    color: #FFEB3B; /* Change color on hover */
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links on small screens */
+        gap: 10px; /* Reduced gap for smaller screens */
     }
 
     .gallery {
